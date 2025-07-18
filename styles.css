@@ -231,19 +231,6 @@ footer {
   .nav-links.active {
     display: flex !important;
   }
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-left: auto;
-    z-index: 201;
-  }
-}
-.menu-toggle {
-  display: none !important;
 }
 @media (max-width: 700px) {
   nav {
@@ -294,8 +281,5 @@ footer {
     box-shadow: none;
     gap: 1.5rem;
     padding: 0;
-  }
-  .menu-toggle {
-    display: none;
   }
 }

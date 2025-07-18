@@ -133,18 +133,4 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.addEventListener('mousedown', function() {
     document.body.classList.remove('show-focus');
   });
-
-  // --- Mobile menu toggle ---
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-    });
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', function() {
-        navLinks.classList.remove('active');
-      });
-    });
-  }
 });
