@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaxShield Nonprofit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">VaxShield</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="hero">
+        <h1>Protecting Communities Through Vaccination</h1>
+        <p>VaxShield raises awareness and empowers communities to stay healthy.</p>
+        <div class="cta-buttons">
+          <a href="#about" class="btn">Learn More</a>
+          <a href="#events" class="btn">Upcoming Events</a>
+          <a href="#shop" class="btn">Shop Kits</a>
+        </div>
+        <div class="stats">
+          <div><span id="stat-reached">10,000+</span><br>People Reached</div>
+          <div><span id="stat-workshops">50+</span><br>Workshops Held</div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>VaxShield is dedicated to promoting vaccination through education, workshops, and community engagement. Our team is passionate about public health and making a difference.</p>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Team Member">
+          <h3>Jane Doe</h3>
+          <p>Founder & Director</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Team Member">
+          <h3>John Smith</h3>
+          <p>Community Lead</p>
+        </div>
+      </div>
+    </section>
+    <section id="events">
+      <h2>Events</h2>
+      <div id="upcoming-events"></div>
+      <h3>Past Events</h3>
+      <div id="past-events"></div>
+    </section>
+    <section id="shop">
+      <h2>Shop Vaccination Kits</h2>
+      <div id="shop-items"></div>
+      <div id="cart"></div>
+    </section>
+    <section id="get-involved">
+      <h2>Get Involved</h2>
+      <form id="volunteer-form">
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <button type="submit">Sign Up to Volunteer</button>
+      </form>
+      <form id="donate-form">
+        <label>Amount: <input type="number" name="amount" min="1" required></label>
+        <button type="submit">Donate</button>
+      </form>
+      <form id="newsletter-form">
+        <label>Email: <input type="email" name="newsletter-email" required></label>
+        <button type="submit">Subscribe to Newsletter</button>
+      </form>
+    </section>
+    <section id="resources">
+      <h2>Resources</h2>
+      <input type="text" id="resource-search" placeholder="Search resources...">
+      <div id="resource-list"></div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label>Name: <input type="text" name="contact-name" required></label>
+        <label>Email: <input type="email" name="contact-email" required></label>
+        <label>Message: <textarea name="contact-message" required></textarea></label>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: info@vaxshield.org</p>
+        <p>Location: 123 Community Lane, City, Country</p>
+        <iframe src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 VaxShield. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

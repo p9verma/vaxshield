@@ -1,0 +1,3 @@
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+
+This project is a modern, responsive HTML/CSS/JS website for VaxShield, a vaccination nonprofit. No database is used. All data is stored locally or via third-party APIs. Features include homepage, about, events (with registration), shop (with cart/checkout), get involved, resources, and contact pages. Use accessible navigation, form validation, and mobile responsiveness. Use placeholder images and text where real content is missing.
