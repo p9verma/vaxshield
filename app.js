@@ -133,4 +133,22 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.addEventListener('mousedown', function() {
     document.body.classList.remove('show-focus');
   });
+
+  // --- Mobile menu toggle ---
+  const menuToggle = document.createElement('button');
+  menuToggle.className = 'menu-toggle';
+  menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+  menuToggle.setAttribute('aria-label', 'Open navigation menu');
+  const nav = document.querySelector('nav');
+  const navLinks = document.querySelector('.nav-links');
+  nav.insertBefore(menuToggle, navLinks);
+  menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+  });
+  // Close menu on link click (mobile)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('active');
+    });
+  });
 });

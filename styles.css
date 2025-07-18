@@ -190,6 +190,42 @@ footer {
 .social-links a:hover {
   color: #fff;
 }
+/* Mobile navigation: collapsed menu */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #0a6ebd;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 200;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+.menu-toggle {
+  display: none;
+}
 @media (max-width: 700px) {
   nav {
     flex-direction: column;
