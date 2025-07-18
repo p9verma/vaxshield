@@ -222,7 +222,7 @@ footer {
     display: flex !important;
   }
   .menu-toggle {
-    display: block !important;
+    display: block;
     background: none;
     border: none;
     color: #fff;
@@ -278,6 +278,7 @@ footer {
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
+    gap: 1.5rem;
   }
   .menu-toggle {
     display: none;
