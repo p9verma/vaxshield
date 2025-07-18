@@ -214,4 +214,19 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+  .hero {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  header, footer {
+    padding: 0.5rem 0;
+  }
+  .shop-item {
+    width: 100%;
+    min-width: 0;
+  }
+  .event-item, .resource-item {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
