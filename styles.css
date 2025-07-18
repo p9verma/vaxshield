@@ -199,32 +199,34 @@ footer {
     position: relative;
   }
   .nav-links {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background: #0a6ebd;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
     z-index: 200;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   }
   .nav-links.active {
-    display: flex;
+    display: flex !important;
   }
   .menu-toggle {
-    display: block;
+    display: block !important;
     background: none;
     border: none;
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
     margin-left: auto;
+    z-index: 201;
   }
 }
 .menu-toggle {
-  display: none;
+  display: none !important;
 }
 @media (max-width: 700px) {
   nav {
