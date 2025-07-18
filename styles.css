@@ -28,6 +28,13 @@ nav {
   display: flex;
   gap: 1.5rem;
 }
+/* Hide nav-links by default (mobile) */
+.nav-links {
+  display: none;
+}
+.nav-links.active {
+  display: block;
+}
 .nav-links a {
   color: #fff;
   text-decoration: none;
@@ -266,5 +273,13 @@ footer {
   .event-item, .resource-item {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .menu-toggle {
+    display: none;
   }
 }
